@@ -1,0 +1,41 @@
+{% extends "alfa.html" %}
+{% load static %}
+
+
+{% block body%}
+<main>
+<div class="container">
+
+
+
+<div class="signup_container">
+    <div class="signup_img_container"><img src="{% static 'images/register/login.jfif' %}" alt="login"> </div>
+    
+    <div class="signup_form_container">
+       
+
+        <div class="signup_form">
+            <h2>Create New Account</h2>
+            <p class="signup_form_p">Please login here</p>
+                     
+
+           <form method="Post">
+
+            {% csrf_token %}
+            
+            {{form.as_p}}
+            
+
+           <button>Sign Up</button>
+            </form>
+
+           
+            
+
+        </div>
+    </div>
+</div>
+</div>
+</main>
+{%endblock body%}
+

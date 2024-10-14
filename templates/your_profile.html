@@ -1,0 +1,79 @@
+{% extends "alfa.html"%}
+{% load static%}
+
+
+{% block title%}
+Profile
+        {% endblock title%}
+
+{% block body%}
+<div class="your_profile_container">
+<h2>Your Profile</h2>
+<h1> Welcome {{ request.user.first_name}}</h1>
+
+
+
+<br><br>
+{% if request.user.is_superuser%}
+<div id="profile_profile_add">
+<h1>Add New Doctor</h1>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+ 
+</form>
+</div>
+{% endif %}
+
+
+
+<p> {{request.email}}</p>
+
+<div id="profile_doctor_profile"> 
+
+</div>
+
+{%if messages %}
+<ul class="messages">
+    {%for message in messages%}
+    <li>{message}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+
+
+</div>
+{% if doc_profile %}
+<script>
+
+    var randevu_data={{Randevus|safe}}
+    var looc=document.getElementById("profile_doctor_profile")
+
+   randevu_data.forEach(meet=>{
+       var cart=document.createElement('div')
+       cart.style.border='solid black 1px'
+       var h3=document.createElement('h3')
+       h3.textContent=meet.patient_name
+       var p1=document.createElement('p')
+       p1.textContent=meet.day
+       var p2=document.createElement('p')
+       p2.textContent=meet.gender
+       var p3=document.createElement('p')
+       p3.textContent=meet.patient_email
+       var p4=document.createElement('p')
+       p4.textContent=meet.start_time
+
+       cart.append(h3,p1,p2,p3,p4)
+       looc.append(cart)
+        })
+
+
+    console.log(randevu_data)
+
+</script>
+
+{%endif%}
+
+{% endblock body%}

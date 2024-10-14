@@ -1,0 +1,52 @@
+{% extends "alfa.html"%}
+{% load static%}
+{% block body%}
+<main>
+    <div class="container">
+   <div class="login_container">
+    <div class="login_img_container">
+        <img src="{% static 'images/register/login.jfif' %}" alt="login"> </div>
+    
+    <div class="login_form_container">
+        <div class="login_logo">
+            <div>
+                <img src="{% static 'logos/logo.jpg' %}" alt="login">
+            </div>
+
+            {%if messages %}
+            <ul class="messages">
+                {%for message in messages%}
+                <li>{{message}}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+
+        <div class="login_form">
+            <h2>WELCOME</h2>
+            <p class="login_form_p">Please login here</p><br><br>
+            <form method="POST">
+                {% csrf_token %}
+
+               {{ form.as_p }}
+               <br><br>
+               <a href= "{% url 'Forgot_Password'%}" >Forgot Password?</a>
+               <br><br>
+
+                <button>Login</button>
+                <br><br>
+               
+                
+            </form>
+            <a href="{% url 'SignUp'%}" >Sign in </a>
+            
+            
+
+        </div>
+    </div>
+</div> 
+</div>
+</main>
+
+
+{% endblock body%}

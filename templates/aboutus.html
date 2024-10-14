@@ -1,0 +1,355 @@
+
+
+    {% extends "alfa.html"%}
+{% load static%}
+
+{% block body%}
+
+<main>
+
+    
+    <div class="hero_main">
+       
+        <div class="about_head_img">
+            <!-- <img src="../static/images/about/abouthead.png" alt=""> -->
+           
+           <div class="container">
+             <div class="about_img_text">
+                <h2>About Us</h2>
+                <ul class="breadcrumb">
+                  <li><a  href="{% url 'Home' %}">Home </a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+                
+    
+            </div>
+           </div>
+           
+       </div>
+       <div class="container">
+
+      
+       <div class="why_choose_us">
+
+
+           <div class="why_choose_us_part1">
+            <h1>
+                Why Choose Us?
+            </h1>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+            </p>
+            <div class="priority">
+                <div class="priority_part1">
+
+                </div>
+                <div class="priority_part2">
+                    <div class="priority_part2_data">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#50945D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>
+                            Qualified Staff of Doctors
+                          </span>
+                    
+                    </div>
+                    <div class="priority_part2_data">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#50945D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>
+                            Feel like you are at Home Services
+                          </span>
+                    
+                    </div>
+                    <div class="priority_part2_data">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#50945D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>
+                            24x7 Emergency Services
+                          </span>
+                    
+                    </div>
+                    <div class="priority_part2_data">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12L10.5347 14.2812C10.9662 14.6696 11.6366 14.6101 11.993 14.1519L16 9M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#50945D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>
+                            Easy and Affordable Billing
+                          </span>
+                    
+                    </div>
+                </div>
+            </div>
+            <button>Get Started</button>
+
+           </div>
+            <div class="why_choose_us_part2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="540" height="540" viewBox="0 0 540 540" fill="none">
+                    <path d="M540 540C540 241.766 298.234 -1.05679e-05 0 -2.36041e-05L-2.36041e-05 540L540 540Z" fill="#50945D"/>
+                  </svg>
+                  <img class="" src="../static/images/about/doctorabout.png" alt="">
+
+                  <img src="../static/logos/Illustration.png" alt="">
+                  
+            </div>
+        
+
+
+        </div>
+
+
+        <div class="our_values">
+            <div class="value">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M21.25 9.375V5C21.25 3.61929 20.1307 2.5 18.75 2.5H11.25C9.86929 2.5 8.75 3.61929 8.75 5V9.375M25 17.5C25 23.0228 20.5228 27.5 15 27.5C9.47715 27.5 5 23.0228 5 17.5C5 11.9772 9.47715 7.5 15 7.5C20.5228 7.5 25 11.9772 25 17.5ZM12.4952 15.2244L10.9403 15.4593C10.0407 15.5953 9.68143 16.7448 10.3324 17.4045L11.4575 18.5448C11.7161 18.8068 11.834 19.1843 11.773 19.5542L11.5074 21.1643C11.3537 22.0959 12.2942 22.8063 13.0989 22.3665L14.4896 21.6063C14.8091 21.4316 15.1909 21.4316 15.5104 21.6063L16.9011 22.3665C17.7058 22.8063 18.6463 22.0959 18.4926 21.1643L18.227 19.5542C18.166 19.1843 18.2839 18.8068 18.5425 18.5448L19.6676 17.4045C20.3186 16.7448 19.9593 15.5953 19.0597 15.4593L17.5048 15.2244C17.1476 15.1705 16.8387 14.9372 16.6789 14.6006L15.9836 13.1357C15.5812 12.2881 14.4187 12.2881 14.0164 13.1357L13.3211 14.6006C13.1613 14.9372 12.8524 15.1705 12.4952 15.2244Z" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></button>
+                <div class="value_text">
+                    <h1>25</h1>
+                    <p>
+                        Years of Experience
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="value">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <ellipse cx="12.5" cy="21.875" rx="8.75" ry="4.375" stroke="#50945D" stroke-width="1.875" stroke-linejoin="round"/>
+                    <circle cx="12.5" cy="8.75" r="5" stroke="#50945D" stroke-width="1.875" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8059 12.8123C18.4033 13.4359 17.9108 13.9959 17.3467 14.4741C17.7898 14.613 18.2611 14.6878 18.75 14.6878C21.3388 14.6878 23.4375 12.5891 23.4375 10.0003C23.4375 7.55558 21.566 5.54798 19.1775 5.33203C19.5103 5.98074 19.7513 6.68427 19.8834 7.42549C20.8722 7.86139 21.5625 8.85023 21.5625 10.0003C21.5625 11.5349 20.3334 12.7825 18.8059 12.8123Z" fill="#50945D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7497 21.9449C23.7371 22.7127 23.5186 23.4503 23.1263 24.1381C23.5867 24.0114 24.0181 23.8646 24.4142 23.6996C25.1606 23.3886 25.8258 22.9944 26.3188 22.5088C26.8151 22.0199 27.1878 21.3826 27.1878 20.6245C27.1878 19.8665 26.8151 19.2291 26.3188 18.7403C25.8258 18.2546 25.1606 17.8604 24.4142 17.5494C23.1358 17.0168 21.4885 16.6738 19.687 16.585C20.9398 17.2213 21.9628 18.0207 22.6691 18.9299C23.0412 19.0338 23.3841 19.1515 23.693 19.2802C24.3038 19.5347 24.7369 19.8139 25.003 20.076C25.2657 20.3348 25.3128 20.5196 25.3128 20.6245C25.3128 20.7294 25.2657 20.9142 25.003 21.173C24.7452 21.427 24.3307 21.6969 23.7497 21.9449Z" fill="#50945D"/>
+                  </svg></button>
+                <div class="value_text">
+                    <h1>400+</h1>
+                    <p>
+                        Specialist Doctors
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="value">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path d="M27.5 8.125C27.5 11.2316 24.9816 13.75 21.875 13.75C18.7684 13.75 16.25 11.2316 16.25 8.125C16.25 5.0184 18.7684 2.5 21.875 2.5C24.9816 2.5 27.5 5.0184 27.5 8.125Z" stroke="#50945D" stroke-width="1.875"/>
+                    <path d="M23.75 5.625V10.625" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 5.625V10.625" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.75 8.125L20 8.125" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2.5 11.25V22.5M2.5 27.5V22.5M2.5 22.5H27.5V27.5" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 17.5H2.5V22.5H27.5V20C27.5 18.6193 26.3807 17.5 25 17.5Z" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.25 15V17.5H12.5V15C12.5 14.3096 11.9404 13.75 11.25 13.75H7.5C6.80964 13.75 6.25 14.3096 6.25 15Z" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></button>
+                <div class="value_text">
+                    <h1>250+</h1>
+                    <p>
+                        Premium Rooms
+
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="value">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <ellipse cx="15" cy="20.625" rx="7.5" ry="3.125" stroke="#50945D" stroke-width="1.875" stroke-linejoin="round"/>
+                    <circle cx="15" cy="10" r="3.75" stroke="#50945D" stroke-width="1.875" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.05684 16.5771C6.50861 16.6416 5.08642 16.9205 3.9824 17.3621C3.35152 17.6144 2.77806 17.9384 2.34699 18.346C1.91394 18.7556 1.5625 19.3143 1.5625 20.0003C1.5625 20.6863 1.91394 21.245 2.34699 21.6546C2.77806 22.0622 3.35152 22.3862 3.9824 22.6385C4.60714 22.8884 5.33377 23.0862 6.12746 23.2225C5.51042 22.5569 5.12315 21.8132 5.02482 21.0247C4.90426 20.984 4.7888 20.9416 4.67876 20.8976C4.17862 20.6976 3.83678 20.4828 3.63532 20.2923C3.43725 20.105 3.43749 20.006 3.4375 20.0004L3.4375 20.0003L3.4375 20.0002C3.43749 19.9946 3.43725 19.8956 3.63532 19.7083C3.83678 19.5178 4.17862 19.303 4.67876 19.103C4.93246 19.0015 5.21501 18.9085 5.52234 18.8263C6.03946 17.964 6.91809 17.1953 8.05684 16.5771Z" fill="#50945D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9751 21.0247C24.8768 21.8132 24.4895 22.5569 23.8725 23.2225C24.6662 23.0862 25.3928 22.8884 26.0175 22.6385C26.6484 22.3862 27.2219 22.0622 27.653 21.6546C28.086 21.245 28.4375 20.6863 28.4375 20.0003C28.4375 19.3143 28.086 18.7556 27.653 18.346C27.2219 17.9384 26.6484 17.6144 26.0175 17.3621C24.9135 16.9205 23.4913 16.6416 21.9431 16.5771C23.0819 17.1953 23.9605 17.964 24.4776 18.8263C24.7849 18.9085 25.0675 19.0015 25.3212 19.103C25.8213 19.303 26.1632 19.5178 26.3646 19.7083C26.5627 19.8956 26.5625 19.9946 26.5625 20.0002V20.0003V20.0004C26.5625 20.006 26.5627 20.105 26.3646 20.2923C26.1632 20.4828 25.8213 20.6976 25.3212 20.8976C25.2112 20.9416 25.0957 20.984 24.9751 21.0247Z" fill="#50945D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.6431 12.6902C20.3683 13.2657 20.008 13.7926 19.5786 14.2544C20.0734 14.5303 20.6434 14.6875 21.2501 14.6875C23.1486 14.6875 24.6876 13.1485 24.6876 11.25C24.6876 9.35152 23.1486 7.8125 21.2501 7.8125C21.1198 7.8125 20.9911 7.81975 20.8646 7.83388C21.0796 8.4159 21.2105 9.0387 21.2425 9.68752C21.245 9.68751 21.2476 9.6875 21.2501 9.6875C22.1131 9.6875 22.8126 10.3871 22.8126 11.25C22.8126 12.1129 22.1131 12.8125 21.2501 12.8125C21.0349 12.8125 20.8297 12.769 20.6431 12.6902Z" fill="#50945D"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13556 7.83388C9.00899 7.81975 8.88034 7.8125 8.75 7.8125C6.85152 7.8125 5.3125 9.35152 5.3125 11.25C5.3125 13.1485 6.85152 14.6875 8.75 14.6875C9.35672 14.6875 9.92672 14.5303 10.4215 14.2544C9.99218 13.7926 9.63186 13.2657 9.357 12.6902C9.17038 12.769 8.96528 12.8125 8.75 12.8125C7.88705 12.8125 7.1875 12.1129 7.1875 11.25C7.1875 10.3871 7.88705 9.6875 8.75 9.6875C8.75256 9.6875 8.75512 9.68751 8.75768 9.68752C8.78962 9.0387 8.92051 8.4159 9.13556 7.83388Z" fill="#50945D"/>
+                  </svg></button>
+                <div class="value_text">
+                    <h1>7000+</h1>
+                    <p>
+                        Happy Patients
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="our_features">
+            <div class="our_features_part1">
+             
+               
+                <div class="our_features_rectancle">
+                    <img class="our_features_rectancle_img" src="../static/images/about/doctor_feratures.png" alt="">
+                    <div class="div_spec_about">
+                        <img class="spec_about" src="../static/logos/spec (1).png" alt="">
+                    </div>
+                </div>
+                
+                
+               
+
+            </div>
+
+            <div class="our_features_part2">
+
+                <h1>We are Setting the New Standards in Medical Sector</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+          
+          
+                <div class="our_features_part2_about">
+
+                    <div class="our_features_part2_about_data">
+                        <button><img src="../static/logos/stethoscope.png" alt=""></button>
+                        <div>
+                           <h2>
+                             Modern Technology
+                           </h2> 
+                           <p>
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                           </p>
+                        </div>
+                    </div>
+                    <div class="our_features_part2_about_data">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                            <path d="M15 14.25V21.75" stroke="#50945D" stroke-width="1.875" stroke-linecap="round"/>
+                            <path d="M18.75 18H11.25" stroke="#50945D" stroke-width="1.875" stroke-linecap="round"/>
+                            <path d="M10 8V6.75C10 4.67893 11.6789 3 13.75 3H16.25C18.3211 3 20 4.67893 20 6.75V8M7.5 28H22.5C25.2614 28 27.5 25.7614 27.5 23V13C27.5 10.2386 25.2614 8 22.5 8H7.5C4.73858 8 2.5 10.2386 2.5 13V23C2.5 25.7614 4.73858 28 7.5 28Z" stroke="#50945D" stroke-width="1.875" stroke-linecap="round"/>
+                            </svg></button>
+                        <div>
+                           <h2>
+                            Certified Doctors
+                           </h2> 
+                           <p>
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.  </p>
+                        </div>
+                    </div>
+                    <div class="our_features_part2_about_data">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                            <path d="M21.25 9.875V5.5C21.25 4.11929 20.1307 3 18.75 3H11.25C9.86929 3 8.75 4.11929 8.75 5.5V9.875M25 18C25 23.5228 20.5228 28 15 28C9.47715 28 5 23.5228 5 18C5 12.4772 9.47715 8 15 8C20.5228 8 25 12.4772 25 18ZM12.4952 15.7244L10.9403 15.9593C10.0407 16.0953 9.68143 17.2448 10.3324 17.9045L11.4575 19.0448C11.7161 19.3068 11.834 19.6843 11.773 20.0542L11.5074 21.6643C11.3537 22.5959 12.2942 23.3063 13.0989 22.8665L14.4896 22.1063C14.8091 21.9316 15.1909 21.9316 15.5104 22.1063L16.9011 22.8665C17.7058 23.3063 18.6463 22.5959 18.4926 21.6643L18.227 20.0542C18.166 19.6843 18.2839 19.3068 18.5425 19.0448L19.6676 17.9045C20.3186 17.2448 19.9593 16.0953 19.0597 15.9593L17.5048 15.7244C17.1476 15.6705 16.8387 15.4372 16.6789 15.1006L15.9836 13.6357C15.5812 12.7881 14.4187 12.7881 14.0164 13.6357L13.3211 15.1006C13.1613 15.4372 12.8524 15.6705 12.4952 15.7244Z" stroke="#50945D" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                        <div>
+                           <h2>
+                            Success of Treatment
+                           </h2> 
+                           <p>
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            
+                <a href="">Learn More</a>
+
+            </div>
+            
+        </div>
+    
+
+
+
+        <div class="meet_our_specialist">
+            <h1>Meet Our Specialist</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="doctor_card-container"> 
+                {% for doctor in Doctors %}
+                <div class="card_doctor">
+                <a href="{% url 'Doctor_Detail' doctor.id %}">
+                    <div class="card_doctor_img">
+                      <img src= "{{doctor.doctor_image.url}}" alt="doctor">  
+                    </div>
+                    
+                    
+                    <h4>{{doctor.name }} {{doctor.last_name}} </h4>
+                    <span>{{doctor.speciality}}</span>
+                </a>
+                    <div class="card_doctor_contact">
+                        <a href=""><img src="{% static '/images/doctors/fb.png' %}" alt=""></a>
+                        <a href=""><img src="{% static '/images/doctors/linkedin.png' %}" alt=""></a>
+                        <a href=""><img src="{% static '/images/doctors/twitter.png' %}" alt=""></a>
+                    </div>
+                </div>
+                {% endfor %}
+                
+                
+           
+                <!-- Add more cards as needed -->
+            </div> 
+      
+        </div>
+
+
+    <div class="client_say">
+        <h1>What’s Our Client Says</h1>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        <div class="clients">
+            <div class="cleint">
+                <div class="client_icons">
+                    <div class="client_icon_part1">
+                        <img src="../static/logos/“.png" alt=""> 
+                    </div>
+                   
+                    <div class="stars">
+                        <img src="../static/logos/star.png" alt="">
+                        <img src="../static/logos/star.png" alt="">
+                        <img src="../static/logos/star.png" alt="">
+                        <img src="./static/logos/star.png" alt="">
+                        <img src="../static/logos/star.png" alt="">
+
+                    </div>
+                    
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                
+                    <div class="comment">
+                        <div class="comment_img ">
+                             <img src="../static/images/about/cameron.png" alt=""></div>
+                       
+                        <div class="commment_name">
+                            <h4>Cameron Williamson</h4>
+                            <span>London, United Kingdom</span>
+
+                        </div>
+                    </div>
+
+            </div>
+            <div class="cleint">
+                <div class="client_icons">
+                    <div class="client_icon_part1">
+                        <img src="../static/logos/“.png" alt=""> 
+                    </div>
+                   
+                    <div class="stars">
+                        <img src="../static/logos/star.png" alt="">
+                        <img src="../static/logos/star.png" alt="">
+                        <img src="../static/logos/star.png" alt="">
+                        <img src="../static/logos/star.png" alt="">
+                        <img src="../static/logos/star.png" alt="">
+
+                    </div>
+                    
+                </div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                
+                    <div class="comment">
+                        <div class="comment_img ">
+                             <img src="../static/images/about/cameron.png" alt=""></div>
+                       
+                        <div class="commment_name">
+                            <h4>Cameron Williamson</h4>
+                            <span>London, United Kingdom</span>
+
+                        </div>
+                    </div>
+
+            </div>
+           
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+   
+ </main>
+
+{% endblock body%}

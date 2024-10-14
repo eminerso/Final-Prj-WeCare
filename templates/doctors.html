@@ -1,0 +1,80 @@
+{% extends "alfa.html" %}
+
+{% load static %}
+
+{% block title%}
+Doctors
+        {% endblock title%}
+
+{% block body %}
+<main>
+  <div class="doctor_head_img">
+    <!-- <img src="{% static '/images/doctors/doctor_head.png' %}" alt=""> -->
+   
+   <div class="container">
+    <div class="doctor_img_text">
+        <h2>Our Doctors</h2>
+        <ul class="breadcrumb">
+          <li><a href="{% url 'Home' %}">Home </a></li>
+          <li><a href="#">Our Doctors</a></li>
+        </ul>
+        
+
+    </div>
+   </div>
+    
+</div>
+
+<div class="container">
+ 
+   
+ 
+       
+        
+        <div class="doctor_card-container"> 
+            {% for doctor in Doctors %}
+            <div class="card_doctor">
+            <a href="{% url 'Doctor_Detail' doctor.id %}">
+                <div class="card_doctor_img">
+                  <img src= "{{doctor.doctor_image.url}}" alt="doctor">  
+                </div>
+                
+                
+                <h4>{{doctor.name }} {{doctor.last_name}} </h4>
+                <span>{{doctor.speciality}}</span>
+            </a>
+                <div class="card_doctor_contact">
+                    <a href=""><img src="{% static '/images/doctors/fb.png' %}" alt=""></a>
+                    <a href=""><img src="{% static '/images/doctors/linkedin.png' %}" alt=""></a>
+                    <a href=""><img src="{% static '/images/doctors/twitter.png' %}" alt=""></a>
+                </div>
+            </div>
+            {% endfor %}
+            
+            
+       
+            <!-- Add more cards as needed -->
+        </div> 
+  
+{% if doctors|length > 10 %}
+
+    <div class="pagination" id="pagination"> 
+        <a href="#" id="prev">Previous</a> 
+        <a href="#" class="page-link" data-page="1">1</a> 
+        <a href="#" class="page-link" data-page="2">2</a> 
+        <a href="#" class="page-link" data-page="3">3</a> 
+        
+        <a href="#" id="next">Next</a> 
+        <p id="page-numbers"> </p> 
+    </div>
+
+    {%endif%}
+   
+    
+</div>   
+
+ 
+</main>
+
+
+{% endblock body %}

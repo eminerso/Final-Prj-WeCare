@@ -1,0 +1,45 @@
+{% extends "alfa.html"%}
+{% load static%}
+{% block body%}
+<main>
+
+
+<div class="login_container">
+    <div class="login_img_container"><img src="{% static 'images/register/login.jfif' %}" alt="login"> </div>
+    
+    <div class="login_form_container">
+        <div class="login_logo">
+            <div>
+                <img src="{% static 'logos/logo.jpg' %}" alt="login">
+            </div>
+
+            {%if messages %}
+            <ul class="messages">
+                {%for message in messages%}
+                <li>{message}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+
+        <div class="login_form">
+            <h2>Enter your OTP code here </h2>
+           
+
+            <form method="POST">
+                {% csrf_token %}
+
+              <label for='otp'>OTP: </label>
+              <input class="login_input" name="otp" type="text" required>
+              <br><br>
+
+                <button>Confirm</button>
+            </form>
+            
+
+        </div>
+    </div>
+</div>
+</main>
+
+{% endblock body%}

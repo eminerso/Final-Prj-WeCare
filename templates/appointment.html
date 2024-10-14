@@ -1,0 +1,49 @@
+{% comment %} {% extends "doctor_detail.html"%}
+{% load static%}
+{% block div %} {% endcomment %}
+<div class="container">
+   <div>
+    <h2> Appointmet for DR .{{ doctor.name }} </h2>
+</div>
+
+<div class="appoint_container">
+
+<form id="app_form" method="post"  >
+ {% csrf_token%}
+ {{form.as_p}} 
+<button id="sub" type="submit"> Submit </button>
+
+
+</form> 
+</div>
+
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</div>
+
+
+
+{% comment %} {% endblock div%} {% endcomment %}
